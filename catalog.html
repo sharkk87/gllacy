@@ -47,7 +47,7 @@
   <main class="main-page">
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item">
-        <a href="">Главная</a>
+        <a href="index.html">Главная</a>
       </li>
       <li class="breadcrumbs__item">
         <a href="">Каталог</a>
@@ -57,8 +57,50 @@
 
     <h1 class="main-page__title">Сливочное мороженое</h1>
 
-    <form action="">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label>Сортировка:
+        <select name="sort">
+          <option value="sort by popularity">по популярности</option>
+        </select>
+      </label>
 
+      <label>
+        Цена: 100 руб. - 500 руб.
+        <input name="cost" type="range">
+      </label>
+
+      <p>Жирность:</p>
+      <label>
+        <input type="radio" name="fat 0"> 0%
+      </label>
+      <label>
+        <input type="radio" name="fat until 10"> до 10%
+      </label>
+      <label>
+        <input type="radio" name="fat until 30"> до 30%
+      </label>
+      <label>
+        <input type="radio" name="fat more 30"> выше 30%
+      </label>
+
+      <p>Наполнители</p>
+      <label>
+        <input name="chocolate" type="checkbox" checked> шоколадные
+      </label>
+      <label>
+        <input name="sugar" type="checkbox"> сахарные присыпки
+      </label>
+      <label>
+        <input name="fruit" type="checkbox"> фрукты
+      </label>
+      <label>
+        <input name="syrup" type="checkbox"> сиропы
+      </label>
+      <label>
+        <input name="jum" type="checkbox"> джемы
+      </label>
+
+      <button type="submit">Применить</button>
     </form>
     
     <section class="catalog">
