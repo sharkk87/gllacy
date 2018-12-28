@@ -66,21 +66,21 @@
 
       <label>
         Цена: 100 руб. - 500 руб.
-        <input name="cost" type="range">
+        <input name="cost" type="range" min="100" max="500">
       </label>
 
       <p>Жирность:</p>
       <label>
-        <input type="radio" name="fat 0"> 0%
+        <input type="radio" name="fat" value="fat 0"> 0%
       </label>
       <label>
-        <input type="radio" name="fat until 10"> до 10%
+        <input type="radio" name="fat" value="fat until 10"> до 10%
       </label>
       <label>
-        <input type="radio" name="fat until 30"> до 30%
+        <input type="radio" name="fat" value="fat until 30"> до 30%
       </label>
       <label>
-        <input type="radio" name="fat more 30"> выше 30%
+        <input type="radio" name="fat" value="fat more 30"> выше 30%
       </label>
 
       <p>Наполнители</p>
